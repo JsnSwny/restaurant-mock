@@ -11,7 +11,7 @@
     <main>
         <div class="w-100 flex justify-center">
             <div class="flex justify-around w-1/2 py-6 text-white font-bold text-lg fixed ">
-                <h1 class="cursor-pointer bg-gray-400">HOME</h1>
+                <h1 class="cursor-pointer">HOME</h1>
                 <h1 class="cursor-pointer">ABOUT</h1>
                 <h1 class="cursor-pointer">MENU</h1>
                 <h1 class="cursor-pointer">CONTACT</h1>
@@ -62,38 +62,46 @@
             <img class="absolute h-full w-full object-fit object-center border-gray-800 border-solid border-2" src="../images/bar.jpg" />
         </div>
     </section>
-    <div class="bg-gray-800 w-full py-8 text-center">
-        <h1 class="font-bold text-gray-400 text-4xl">Menu</h1>
-    </div>
-    <div class="bg-gray-100 py-10">
+    <div class="bg-gray-200 py-10">
         <div class="w-11/12 sm:1/2 lg:w-9/12 mx-auto sm:flex sm:flex-col">
-            <div style="height: 500px; width: 700px;" class="relative flex text-center self-start">
+            <div style="height: 500px; width: 700px;" class="relative flex text-center self-start mt-5">
                 <div style="height: 50%; align-self: center;" class="absolute bg-white w-3/5 z-50 flex flex-col items-center justify-center rounded right-0">
-                    <h1 class="font-bold text-3xl">BREAKFAST</h1>
+                    <h1 class="font-bold text-3xl">BREAKFAST MENU</h1>
                     <h1 class="text-2xl font-bold">.</h1>
                     <h1>Breakfast Served Everyday from 10am - 12pm</h1>
+                    <button class="border-2 border-black border-solid p-4 mt-4 hover:bg-black hover:text-white">View Menu</button>
                 </div>
                 <img style="height: 500px; width: 500px;" class="w-1/2 right-0 absolute left-0" src="../images/breakfast.jpeg" />
             </div>
-            <div style="height: 500px; width: 700px;" class="relative flex text-center self-end">
+            <div style="height: 500px; width: 700px;" class="relative flex text-center self-end mt-5">
                 <div style="height: 50%; align-self: center;" class="absolute bg-white w-3/5 z-50 flex flex-col items-center justify-center rounded left-0">
                     <h1 class="font-bold text-3xl">LUNCH</h1>
                     <h1 class="text-2xl font-bold">.</h1>
                     <h1>Lunch Served Everyday from 1pm - 4pm</h1>
+                    <button class="border-2 border-black border-solid p-4 mt-4 hover:bg-black hover:text-white">View Menu</button>
+
                 </div>
                 <img style="height: 500px; width: 500px;" class="w-1/2 right-0 absolute right-0" src="../images/lunch.jpeg" />
             </div>
-            <div style="height: 500px; width: 700px;" class="relative flex text-center self-start">
+            <div style="height: 500px; width: 700px;" class="relative flex text-center self-start mt-5">
                 <div style="height: 50%; align-self: center;" class="absolute bg-white w-3/5 z-50 flex flex-col items-center justify-center rounded right-0">
                     <h1 class="font-bold text-3xl">DINNER</h1>
                     <h1 class="text-2xl font-bold">.</h1>
                     <h1>Dinner Served Everyday from 5pm - 9pm</h1>
+                    <button class="border-2 border-black border-solid p-4 mt-4 hover:bg-black hover:text-white">View Menu</button>
+
                 </div>
                 <img style="height: 500px; width: 500px;" class="w-1/2 right-0 absolute left-0" src="../images/dinner.jpeg" />
             </div>
 
         </div>
-
     </div>
+    <section>
+        <div class="bg-gray-900 flex flex-col justify-center items-center py-8">
+            <label for="name" class="text-2xl text-white font-bold">Name:</label>
+            <input type="text" class="p-2 text-xl bg-gray-800 focus:outline-none" id="name" />
+            
+        </div>
+    </section>
 </body>
 </html>
