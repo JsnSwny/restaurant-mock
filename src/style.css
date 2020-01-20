@@ -2,4 +2,119 @@
 
 @tailwind components;
 
+.menu-btn {
+    @apply border-2 border-black border-solid p-4 mt-4;
+}
+
+.menu-btn:hover {
+    @apply bg-black text-white;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&display=swap');
+
+.hero-image {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/restaurant.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+.menu-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.menu-text {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-item:hover {
+    color: rgb(231, 188, 168);
+}
+
+@media (min-width: 768px) {
+    .center-box {
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%,0);
+    }
+    .menu-item {
+        height: 500px;
+        width: 700px;
+    }
+    .menu-item img {
+        width: 500px;
+        height: 500px;
+    }
+    .menu-text {
+        @apply bg-white;
+        -webkit-box-shadow: 0px 4px 8px 1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 4px 8px 1px rgba(0,0,0,0.75);
+        box-shadow: 0px 4px 8px 1px rgba(0,0,0,0.75);
+    }
+
+}
+
+
+.about-image {
+    background-image: linear-gradient(rgba(122, 96, 83, 0.95), rgba(122,96,83,0.95)), url("../images/restaurant2.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.image-container img {
+    position: absolute; /* Take your picture out of the flow */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; /* Make the picture taking the size of it's parent */
+    width: 100%;
+    height: 100%; /* This if for the object-fit */
+    object-fit: cover; /* Equivalent of the background-size: cover; of a background-image */
+    object-position: center;
+}
+
+.image-container img:after {
+    content: '';
+    position: absolute;
+    width: 100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.9);
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.image-container:after {
+    content: "";
+    display: block;
+    padding-bottom: 60%; /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */
+    background: red;
+}
+
+.about-image img {
+    width: 100px;
+}
+
+.button-fade {
+    transition: 0.1s all ease-in;
+    background: rgba(0,0,0,0.4);
+}
+
+.button-fade:hover {
+    background: rgba(41, 41, 41, 0.4);
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
 @tailwind utilities;
