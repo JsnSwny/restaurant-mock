@@ -7,16 +7,25 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&display=swap" rel="stylesheet">
     <title>Restaurant Mock</title>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
 </head>
 <body>
     <nav>
-        <div style="background-color: rgb(20, 20, 20);" class="w-full py-6 sm:py-4 text-white z-50 font-bold text-sm sm:text-xl fixed ">
-            <div class="flex justify-around items-center md:w-10/12 lg:w-1/2 mx-auto">
-                <h1 onclick="scrollEl('about')" class="nav-item cursor-pointer font-normal">ABOUT</h1>
-                <h1 onclick="scrollEl('opening')" class="nav-item cursor-pointer font-normal">OPENING TIMES</h1>
-                <img onclick="scrollEl('home')" class="hidden sm:block cursor-pointer" style="width: 50px;" src="images/logo-white.svg">
-                <h1 onclick="scrollEl('menus')" class="nav-item cursor-pointer font-normal">MENU</h1>
-                <h1 onclick="scrollEl('contact')" class="nav-item cursor-pointer font-normal" >CONTACT</h1>
+        <div style="background-color: rgb(20, 20, 20);" class="w-full py-6 sm:py-4 text-white z-50 font-bold text-xs sm:text-lg lg:text-xl fixed ">
+            <div class="flex justify-around items-center text-center md:w-11/12 lg:w-11/12 xl:w-8/12 mx-auto">
+                <a href="#about" class="md:w-1/5 nav-item cursor-pointer font-normal">ABOUT</a>
+                <a href="#opening" class="md:w-1/5 nav-item cursor-pointer font-normal">OPENING TIMES</a>
+                <div class="w-1/5 hidden md:block">
+                    <a href="#home">
+                        <img class="w-full cursor-pointer mx-auto" style="width: 50px;" src="images/logo-white.svg">
+                    </a>
+                </div>
+                <a href="#menus" class="md:w-1/5 nav-item cursor-pointer font-normal">MENU</a>
+                <a href="#contact" class="md:w-1/5 nav-item cursor-pointer font-normal" >CONTACT</a>
             </div>
         </div>
     </nav>
@@ -111,32 +120,24 @@
         <div style="background-color: rgb(20, 20, 20);" class="w-full py-8 text-center">
             <h1 class="font-bold text-gray-200 text-4xl">Contact Us</h1>
         </div>
-    
-        <div style="background-color: rgb(34, 34, 34);" class="flex flex-col justify-center items-center py-12">
+        <div class="contact-image flex flex-col justify-center items-center py-12">
             <label for="name" class="text-2xl text-white font-bold">Name</label>
-            <input style="background-color: rgb(59, 59, 59);" type="text" class="p-4 text-xl w-11/12 md:w-5/12  focus:outline-none mt-1 text-white" id="name" />
-            <label for="email" class="text-2xl text-white font-bold mt-5">Email</label>
-            <input style="background-color: rgb(59, 59, 59);" type="email" class="p-4 text-xl w-11/12 md:w-5/12 focus:outline-none mt-1 text-white" id="email" />
-            <label for="name" class="text-2xl text-white font-bold mt-5">Message</label>
+            <input style="background-color: rgb(48, 48, 48);" type="text" class="p-4 text-xl w-11/12 md:w-5/12  focus:outline-none mt-2 text-white rounded opacity-75 focus:opacity-100" id="name" />
+            <label for="email" class="text-2xl text-white font-bold mt-6">Email</label>
+            <input style="background-color: rgb(48, 48, 48);" type="email" class="p-4 text-xl w-11/12 md:w-5/12 focus:outline-none mt-2 text-white rounded opacity-75 focus:opacity-100" id="email" />
+            <label for="name" class="text-2xl text-white font-bold mt-6">Message</label>
             <textarea 
-                style="background-color: rgb(59, 59, 59);"
+                style="background-color: rgb(48, 48, 48);"
                 rows="5" 
                 cols="33" 
-                class="p-4 text-xl w-11/12 md:w-5/12 focus:outline-none mt-1 text-white">
+                class="p-4 text-xl w-11/12 md:w-5/12 focus:outline-none mt-2 text-white rounded opacity-75 focus:opacity-100">
             </textarea>
-            <button class="focus:outline-none p-4 bg-green-600 hover:bg-green-500 text-white rounded w-11/12 md:w-5/12 mt-5">Send</button>
+            <button class="focus:outline-none p-4 text-xl bg-green-600 hover:bg-green-500 text-white rounded w-11/12 md:w-5/12 mt-5">Send</button>
         </div>
     </section>
 
     <footer class="bg-black py-3 flex items-center justify-center text-white">
         <p>Website Developed by <a class="text-orange-500" href="mailto:jsnswny@gmail.com">Jason Sweeney</a></p>
     </footer>
-
-    <script>
-        function scrollEl(element) {
-            document.getElementById(element).scrollIntoView();
-        }
-
-    </script>
 </body>
 </html>
