@@ -15,7 +15,7 @@
 .hero-image {
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/restaurant.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/restaurant.jpeg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -62,7 +62,7 @@
 
 
 .about-image {
-    background-image: linear-gradient(rgba(122, 96, 83, 0.95), rgba(122,96,83,0.95)), url("../images/restaurant2.jpeg");
+    background-image: linear-gradient(rgba(122, 96, 83, 0.95), rgba(122,96,83,0.95)), url("images/restaurant2.jpeg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
