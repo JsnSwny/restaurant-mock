@@ -12,22 +12,22 @@
     <nav>
         <div style="background-color: rgb(20, 20, 20);" class="w-full py-6 sm:py-4 text-white z-50 font-bold text-sm sm:text-xl fixed ">
             <div class="flex justify-around items-center md:w-10/12 lg:w-1/2 mx-auto">
-                <h1 class="nav-item cursor-pointer font-normal">HOME</h1>
-                <h1 class="nav-item cursor-pointer font-normal">ABOUT</h1>
-                <img class="hidden sm:block" style="width: 50px;" src="images/logo-white.svg">
-                <h1 class="nav-item cursor-pointer font-normal">MENU</h1>
-                <h1 class="nav-item cursor-pointer font-normal" >CONTACT</h1>
+                <h1 onclick="scrollEl('about')" class="nav-item cursor-pointer font-normal">ABOUT</h1>
+                <h1 onclick="scrollEl('opening')" class="nav-item cursor-pointer font-normal">OPENING TIMES</h1>
+                <img onclick="scrollEl('home')" class="hidden sm:block cursor-pointer" style="width: 50px;" src="images/logo-white.svg">
+                <h1 onclick="scrollEl('menus')" class="nav-item cursor-pointer font-normal">MENU</h1>
+                <h1 onclick="scrollEl('contact')" class="nav-item cursor-pointer font-normal" >CONTACT</h1>
             </div>
         </div>
     </nav>
-    <main>
+    <main id="home">
         <div class="hero-image flex flex-col items-center justify-center">
             <img class="w-11/12 md:w-1/2 xl:w-2/5" src="images/logo.svg">
             <button style="width: 200px;" class="focus:outline-none font-bold rounded button-fade text-white py-3 mt-10 text-xl border-solid border-2 border-red-700">Book Now</button>
         </div>
     </main>
 
-    <section>
+    <section id="about">
         <div class="h-full md:h-screen py-12 text-center about-image flex flex-col items-center justify-center">
             <img src="images/logo2.svg">
             <h1 style="color: rgb(231, 188, 168)" class="text-4xl mt-6 font-bold">About</h1>
@@ -37,7 +37,7 @@
             <p style="color: rgb(231, 188, 168)" class="w-11/12 md:w-3/4 lg:w-1/2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi vel similique magni non qui nisi deleniti. Provident quisquam perspiciatis nobis, vel cum doloremque accusantium voluptates tenetur! Nisi eaque labore aspernatur?</p>
         </div>
     </section>
-    <section class="flex flex-wrap text-center text-white w-full">
+    <section id="opening" class="flex flex-wrap text-center text-white w-full">
         <div style="background-color: rgb(20, 20, 20);" class="w-full py-8 text-center">
             <h1 class="font-bold text-gray-200 text-4xl">Opening Times</h1>
         </div>
@@ -69,7 +69,7 @@
         </div>
     </section>
 
-    <section class="menus">
+    <section id="menus" class="menus">
         <div style="background-color: rgb(20, 20, 20);" class="w-full py-8 text-center">
             <h1 class="font-bold text-gray-200 text-4xl">Menus</h1>
         </div>
@@ -107,7 +107,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="contact">
         <div style="background-color: rgb(20, 20, 20);" class="w-full py-8 text-center">
             <h1 class="font-bold text-gray-200 text-4xl">Contact Us</h1>
         </div>
@@ -131,5 +131,12 @@
     <footer class="bg-black py-3 flex items-center justify-center text-white">
         <p>Website Developed by <a class="text-orange-500" href="mailto:jsnswny@gmail.com">Jason Sweeney</a></p>
     </footer>
+
+    <script>
+        function scrollEl(element) {
+            document.getElementById(element).scrollIntoView();
+        }
+
+    </script>
 </body>
 </html>
