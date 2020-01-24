@@ -82,6 +82,10 @@ html {
     background-repeat: no-repeat;
 }
 
+#nav {
+    transition: 0.2s all ease-in;
+}
+
 .image-container img {
     position: absolute; /* Take your picture out of the flow */
     top: 0;
