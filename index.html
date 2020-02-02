@@ -1,152 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Restaurant Mock</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
-    </script>
-</head>
-<body>
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <nav>
-        <div id="nav" class="w-full py-6 sm:py-4 text-white z-50 font-bold text-xs sm:text-lg lg:text-xl fixed ">
-            <div class="flex justify-around items-center text-center md:w-11/12 lg:w-11/12 xl:w-8/12 mx-auto">
-                <a href="#about" class="md:w-1/5 nav-item cursor-pointer font-normal">ABOUT</a>
-                <a href="#opening" class="md:w-1/5 nav-item cursor-pointer font-normal">OPENING TIMES</a>
-                <div class="w-1/5 hidden md:block">
-                    <a href="#home">
-                        <img class="w-full cursor-pointer mx-auto" style="width: 50px;" src="images/logo-white.svg">
-                    </a>
-                </div>
-                <a href="#menus" class="md:w-1/5 nav-item cursor-pointer font-normal">MENU</a>
-                <a href="#contact" class="md:w-1/5 nav-item cursor-pointer font-normal" >CONTACT</a>
-            </div>
+      <div
+        id="nav"
+        class="w-full py-6 sm:py-4 text-white z-50 font-bold text-xs sm:text-lg lg:text-xl fixed "
+      >
+        <div
+          class="flex justify-around items-center text-center md:w-11/12 lg:w-11/12 xl:w-8/12 mx-auto"
+        >
+          <a href="#about" class="md:w-1/5 nav-item cursor-pointer font-normal"
+            >ABOUT</a
+          >
+          <a
+            href="#opening"
+            class="md:w-1/5 nav-item cursor-pointer font-normal"
+            >OPENING TIMES</a
+          >
+          <div class="w-1/5 hidden md:block">
+            <a href="#home">
+              <img
+                class="w-full cursor-pointer mx-auto"
+                style="width: 50px;"
+                src="images/logo-white.svg"
+              />
+            </a>
+          </div>
+          <a href="#menus" class="md:w-1/5 nav-item cursor-pointer font-normal"
+            >MENU</a
+          >
+          <a
+            href="#contact"
+            class="md:w-1/5 nav-item cursor-pointer font-normal"
+            >CONTACT</a
+          >
         </div>
+      </div>
     </nav>
     <main id="home">
-        <div class="hero-image flex flex-col items-center justify-center">
-            <img class="w-11/12 md:w-1/2 xl:w-2/5" src="images/logo.svg">
-            <button style="width: 200px;" class="focus:outline-none font-bold rounded button-fade text-white py-3 mt-10 text-xl border-solid border-2 border-red-700">Book Now</button>
-        </div>
+      <div class="hero-image flex flex-col items-center justify-center py-24">
+        <img class="w-10/12 md:w-1/2 xl:w-2/5" src="images/logo.svg" />
+        <button
+          style="width: 200px;"
+          class="focus:outline-none font-bold rounded button-fade text-white py-3 mt-10 text-xl border-solid border-2 border-red-700"
+        >
+          Book Now
+        </button>
+      </div>
     </main>
 
     <section id="about">
-        <div class="h-full md:h-screen py-12 text-center about-image flex flex-col items-center justify-center">
-            <img src="images/logo2.svg">
-            <h1 style="color: rgb(231, 188, 168)" class="text-4xl mt-6 font-bold">About</h1>
-            <br>
-            <p style="color: rgb(231, 188, 168)" class="w-11/12 md:w-3/4 lg:w-1/2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repudiandae ducimus ipsum, voluptatem, voluptatum perferendis quis perspiciatis atque magni est similique possimus. Consequatur nobis officia excepturi repellat provident blanditiis illo id natus illum, eaque minus eligendi, culpa quisquam earum necessitatibus! Quibusdam asperiores adipisci fugiat enim sapiente quo sit. Rerum, accusantium.</p>
-            <br>
-            <p style="color: rgb(231, 188, 168)" class="w-11/12 md:w-3/4 lg:w-1/2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi vel similique magni non qui nisi deleniti. Provident quisquam perspiciatis nobis, vel cum doloremque accusantium voluptates tenetur! Nisi eaque labore aspernatur?</p>
-        </div>
+      <div
+        class="text-center about-image flex flex-col items-center justify-center"
+      >
+        <img src="images/logo2.svg" />
+        <h1 style="color: rgb(231, 188, 168)" class="text-4xl mt-6 font-bold">
+          About
+        </h1>
+        <br />
+        <p style="color: rgb(231, 188, 168)" class="w-11/12 md:w-3/4 lg:w-1/2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          repudiandae ducimus ipsum, voluptatem, voluptatum perferendis quis
+          perspiciatis atque magni est similique possimus. Consequatur nobis
+          officia excepturi repellat provident blanditiis illo id natus illum,
+          eaque minus eligendi, culpa quisquam earum necessitatibus! Quibusdam
+          asperiores adipisci fugiat enim sapiente quo sit. Rerum, accusantium.
+        </p>
+        <br />
+        <p style="color: rgb(231, 188, 168)" class="w-11/12 md:w-3/4 lg:w-1/2">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi vel
+          similique magni non qui nisi deleniti. Provident quisquam perspiciatis
+          nobis, vel cum doloremque accusantium voluptates tenetur! Nisi eaque
+          labore aspernatur?
+        </p>
+      </div>
     </section>
     <section id="opening" class="flex flex-wrap text-center text-white w-full">
-        <div style="background-color: rgb(20, 20, 20);" class="w-full py-8 text-center">
-            <h1 class="font-bold text-gray-200 text-4xl">Opening Times</h1>
+      <div
+        style="background-color: rgb(20, 20, 20);"
+        class="w-full py-8 text-center"
+      >
+        <h1 class="font-bold text-gray-200 text-4xl">Opening Times</h1>
+      </div>
+
+      <div class="flex flex-wrap text-center text-white w-full">
+        <div class="relative w-screen md:w-1/2 image-container">
+          <img
+            class="w-100 h-100 absolute object-fit object-center"
+            src="images/restaurant3.jpeg"
+          />
         </div>
 
-        <div class="flex flex-wrap text-center text-white w-full">
-            <div class="relative w-screen md:w-1/2 image-container">
-                <img class="w-100 h-100 absolute object-fit object-center" src="images/restaurant3.jpeg" />
-            </div>
-
-            <div style="background-color: rgb(34, 34, 34);" class="relative w-screen md:w-1/2 flex flex-col items-center justify-center py-8 md:py-3">
-                <h1 class="font-bold text-4xl md:text-3xl lg:text-4xl">Restaurant</h1>
-                <br>
-                <p class="text-xl lg:text-2xl"><strong>Sunday - Thursday</strong><br>10:00 - 20:00</p>
-                <br>
-                <p class="text-xl lg:text-2xl"><strong>Friday - Saturday</strong><br>10:00 - 22:00</p>
-            </div>
-
-            <div style="background-color: rgb(34, 34, 34);" class="relative w-screen md:w-1/2 order-4 md:order-3 flex flex-col items-center justify-center py-8 md:py-3">
-                <h1 class="font-bold text-4xl md:text-3xl lg:text-4xl">Bar</h1>
-                <br>
-                <p class="text-xl lg:text-2xl"><strong>Sunday - Thursday</strong><br>10:00 - 22:00</p>
-                <br>
-                <p class="text-xl lg:text-2xl"><strong>Friday - Saturday</strong><br>10:00 - 00:00</p>
-            </div>
-
-            <div class="relative w-screen md:w-1/2 image-container order-3">
-                <img class="absolute h-full w-full object-fit object-center" src="images/bar.jpg" />
-            </div>
+        <div
+          style="background-color: rgb(34, 34, 34);"
+          class="relative w-screen md:w-1/2 flex flex-col items-center justify-center py-8 md:py-3"
+        >
+          <h1 class="font-bold text-4xl md:text-3xl lg:text-4xl">Restaurant</h1>
+          <br />
+          <p class="text-xl lg:text-2xl">
+            <strong>Sunday - Thursday</strong><br />10:00 - 20:00
+          </p>
+          <br />
+          <p class="text-xl lg:text-2xl">
+            <strong>Friday - Saturday</strong><br />10:00 - 22:00
+          </p>
         </div>
+
+        <div
+          style="background-color: rgb(34, 34, 34);"
+          class="relative w-screen md:w-1/2 order-4 md:order-3 flex flex-col items-center justify-center py-8 md:py-3"
+        >
+          <h1 class="font-bold text-4xl md:text-3xl lg:text-4xl">Bar</h1>
+          <br />
+          <p class="text-xl lg:text-2xl">
+            <strong>Sunday - Thursday</strong><br />10:00 - 22:00
+          </p>
+          <br />
+          <p class="text-xl lg:text-2xl">
+            <strong>Friday - Saturday</strong><br />10:00 - 00:00
+          </p>
+        </div>
+
+        <div class="relative w-screen md:w-1/2 image-container order-3">
+          <img
+            class="absolute h-full w-full object-fit object-center"
+            src="images/bar.jpg"
+          />
+        </div>
+      </div>
     </section>
 
     <section id="menus" class="menus">
-        <div style="background-color: rgb(20, 20, 20);" class="w-full py-8 text-center">
-            <h1 class="font-bold text-gray-200 text-4xl">Menus</h1>
-        </div>
-        <div class="menu-bg py-12">
-            <!-- <img class="absolute opacity-50" src="images/logo-large.svg" /> -->
-            <div class="w-11/12 sm:1/2 lg:w-7/12 mx-auto md:flex md:flex-col">
-                <div class="menu-item relative flex flex-col md:flex-row text-center self-start ">
-                    <div style="height: 50%; align-self: center;" class="menu-text absolute w-full md:w-3/5 z-20 flex flex-col items-center justify-center md:rounded right-0 bottom-0 md:bottom-auto">
-                        <h1 class="font-bold text-4xl">• Breakfast •</h1>
-                        <h1 class="text-2xl font-bold">-</h1>
-                        <h1>Breakfast Served Everyday from 10am - 12pm</h1>
-                        <button class="border-2 border-black border-solid p-4 mt-4 hover:bg-black hover:text-white">View Menu</button>
-                    </div>
-                    <img class="w-1/2 right-0 md:absolute left-0" src="images/breakfast.jpeg" />
-                </div>
-                <div class="menu-item relative flex flex-col md:flex-row text-center self-end mt-5">
-                    <div style="height: 50%; align-self: center;" class="menu-text absolute w-full md:w-3/5 z-20 flex flex-col items-center justify-center md:rounded left-0 bottom-0 md:bottom-auto">
-                        <h1 class="font-bold text-4xl">• Lunch •</h1>
-                        <h1 class="text-2xl font-bold">-</h1>
-                        <h1>Lunch Served Everyday from 1pm - 4pm</h1>
-                        <button class="border-2 border-black border-solid p-4 mt-4 hover:bg-black hover:text-white">View Menu</button>
-                    </div>
-                    <img class="w-1/2 right-0 md:absolute right-0" src="images/lunch.jpeg" />
-                </div>
-                <div class="menu-item relative flex flex-col md:flex-row text-center self-start mt-5">
-                    <div style="height: 50%; align-self: center;" class="menu-text absolute w-full md:w-3/5 z-20 flex flex-col items-center justify-center md:rounded right-0 bottom-0 md:bottom-auto">
-                        <h1 class="font-bold text-4xl">• Dinner •</h1>
-                        <h1 class="text-2xl font-bold">-</h1>
-                        <h1>Dinner Served Everyday from 5pm - 9pm</h1>
-                        <button class="border-2 border-black border-solid p-4 mt-4 hover:bg-black hover:text-white">View Menu</button>
-                    </div>
-                    <img class="w-1/2 right-0 md:absolute left-0" src="images/dinner.jpeg" />
-                </div>
+      <div
+        style="background-color: rgb(20, 20, 20);"
+        class="w-full py-8 text-center"
+      >
+        <h1 class="font-bold text-gray-200 text-4xl">Menus</h1>
+      </div>
+      <div class="menu-bg py-12">
+        <!-- <img class="absolute opacity-50" src="images/logo-large.svg" /> -->
+        <div class="w-11/12 sm:1/2 lg:w-7/12 mx-auto md:flex md:flex-col">
+          <div
+            class="menu-item relative flex flex-col md:flex-row text-center self-start "
+          >
+            <div
+              style="height: 50%; align-self: center;"
+              class="menu-text absolute w-full md:w-3/5 z-20 flex flex-col items-center justify-center md:rounded right-0 bottom-0 md:bottom-auto"
+            >
+              <h1 class="font-bold text-4xl">• Breakfast •</h1>
+              <h1 class="text-2xl font-bold">-</h1>
+              <h1>Breakfast Served Everyday from 10am - 12pm</h1>
+              <button
+                class="border-2 border-black border-solid p-4 mt-4 hover:bg-black hover:text-white"
+              >
+                View Menu
+              </button>
             </div>
+            <img
+              class="w-1/2 right-0 md:absolute left-0"
+              src="images/breakfast.jpeg"
+            />
+          </div>
+          <div
+            class="menu-item relative flex flex-col md:flex-row text-center self-end mt-5"
+          >
+            <div
+              style="height: 50%; align-self: center;"
+              class="menu-text absolute w-full md:w-3/5 z-20 flex flex-col items-center justify-center md:rounded left-0 bottom-0 md:bottom-auto"
+            >
+              <h1 class="font-bold text-4xl">• Lunch •</h1>
+              <h1 class="text-2xl font-bold">-</h1>
+              <h1>Lunch Served Everyday from 1pm - 4pm</h1>
+              <button
+                class="border-2 border-black border-solid p-4 mt-4 hover:bg-black hover:text-white"
+              >
+                View Menu
+              </button>
+            </div>
+            <img
+              class="w-1/2 right-0 md:absolute right-0"
+              src="images/lunch.jpeg"
+            />
+          </div>
+          <div
+            class="menu-item relative flex flex-col md:flex-row text-center self-start mt-5"
+          >
+            <div
+              style="height: 50%; align-self: center;"
+              class="menu-text absolute w-full md:w-3/5 z-20 flex flex-col items-center justify-center md:rounded right-0 bottom-0 md:bottom-auto"
+            >
+              <h1 class="font-bold text-4xl">• Dinner •</h1>
+              <h1 class="text-2xl font-bold">-</h1>
+              <h1>Dinner Served Everyday from 5pm - 9pm</h1>
+              <button
+                class="border-2 border-black border-solid p-4 mt-4 hover:bg-black hover:text-white"
+              >
+                View Menu
+              </button>
+            </div>
+            <img
+              class="w-1/2 right-0 md:absolute left-0"
+              src="images/dinner.jpeg"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="contact">
-        <div style="background-color: rgb(20, 20, 20);" class="w-full py-8 text-center">
-            <h1 class="font-bold text-gray-200 text-4xl">Contact Us</h1>
+      <div
+        style="background-color: rgb(20, 20, 20);"
+        class="w-full py-8 text-center"
+      >
+        <h1 class="font-bold text-gray-200 text-4xl">Contact Us</h1>
+      </div>
+      <div class="contact-image py-12">
+        <div
+          class="flex flex-col justify-center items-center w-11/12 md:w-5/12 mx-auto"
+        >
+          <label for="name" class="text-2xl text-white font-bold self-start"
+            >Name</label
+          >
+          <input
+            style="background-color: rgb(48, 48, 48);"
+            type="text"
+            class="p-4 text-xl w-full focus:outline-none mt-2 text-white rounded opacity-75 focus:opacity-100"
+            id="name"
+          />
+          <label
+            for="email"
+            class="text-2xl text-white font-bold mt-6 self-start"
+            >Email</label
+          >
+          <input
+            style="background-color: rgb(48, 48, 48);"
+            type="email"
+            class="p-4 text-xl w-full focus:outline-none mt-2 text-white rounded opacity-75 focus:opacity-100"
+            id="email"
+          />
+          <label
+            for="message"
+            class="text-2xl text-white font-bold mt-6 self-start"
+            >Message</label
+          >
+          <textarea
+            id="message"
+            style="background-color: rgb(48, 48, 48);"
+            rows="5"
+            cols="33"
+            class="p-4 text-xl w-full focus:outline-none mt-2 text-white rounded opacity-75 focus:opacity-100"
+          ></textarea>
+          <button
+            class="focus:outline-none p-4 text-xl bg-green-600 hover:bg-green-500 text-white rounded w-full mt-6"
+          >
+            Send
+          </button>
         </div>
-        <div class="contact-image py-12">
-            <div class="flex flex-col justify-center items-center w-11/12 md:w-5/12 mx-auto">
-                <label for="name" class="text-2xl text-white font-bold self-start">Name</label>
-                <input style="background-color: rgb(48, 48, 48);" type="text" class="p-4 text-xl w-full focus:outline-none mt-2 text-white rounded opacity-75 focus:opacity-100" id="name" />
-                <label for="email" class="text-2xl text-white font-bold mt-6 self-start">Email</label>
-                <input style="background-color: rgb(48, 48, 48);" type="email" class="p-4 text-xl w-full focus:outline-none mt-2 text-white rounded opacity-75 focus:opacity-100" id="email" />
-                <label for="message" class="text-2xl text-white font-bold mt-6 self-start">Message</label>
-                <textarea id="message" style="background-color: rgb(48, 48, 48);" rows="5" cols="33" class="p-4 text-xl w-full focus:outline-none mt-2 text-white rounded opacity-75 focus:opacity-100"></textarea>
-                <button class="focus:outline-none p-4 text-xl bg-green-600 hover:bg-green-500 text-white rounded w-full mt-6">Send</button>
-            </div>
-        </div>
+      </div>
     </section>
 
     <footer class="bg-black py-3 flex items-center justify-center text-white">
-        <p>Website Developed by <a class="text-orange-500" href="mailto:jsnswny@gmail.com">Jason Sweeney</a></p>
+      <p>
+        Website Developed by
+        <a class="text-orange-500" href="mailto:jsnswny@gmail.com"
+          >Jason Sweeney</a
+        >
+      </p>
     </footer>
 
     <script>
-        window.onscroll = function(){
-        var top =	 window.pageYOffset || document.documentElement.scrollTop;
+      window.onscroll = function() {
+        var top = window.pageYOffset || document.documentElement.scrollTop;
         if (top > 100) {
-            document.getElementById('nav').style.background = "rgb(20, 20, 20)";
+          document.getElementById("nav").style.background = "rgb(20, 20, 20)";
         } else {
-            document.getElementById('nav').style.background = "none";
+          document.getElementById("nav").style.background = "none";
         }
-        };
+      };
     </script>
-</body>
+  </body>
 </html>
